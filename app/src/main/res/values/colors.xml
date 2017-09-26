@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#607D8B</color>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorRecharge">#f9df96</color>
+    <color name="colorConsume">#ffa66e</color>
+    <color name="colorLose">#ff709cde</color>
+    <color name="colorPerson">#fc888b</color>
+    <color name="colorUserKnow">#84d0ac</color>
+    <color name="button_login">#62b900</color>
+    <color name="button_course_delete">#e2FF5722</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="blue">#ff87CEFA</color>
+    <color name="currentdate">#f1DC143C</color>
+    <color name="black">#f1000000</color>
+
+    <color name="checked_text_color">#ff607d8b</color>
+    <color name="unchecked_text_color">#ff000000</color>
+
+    <color name="checked_icon_color">#ff607d8b</color>
+    <color name="unchecked_icon_color">#ff757274</color>
+
+
+    <!--<color name="course_time_color">#e2f0f0f0</color>-->
+    <color name="course_time_color">#51f0f0f0</color>
+
+    <color name="course_grid_color0">#e27fd0e7</color>
+    <color name="course_grid_color8">#e29ab865</color>
+    <color name="course_grid_color2">#e284d0ac</color>
+    <color name="course_grid_color3">#e2909a4b</color>
+    <color name="course_grid_color4">#e2b38aae</color>
+    <color name="course_grid_color5">#e2b15251</color>
+    <color name="course_grid_color6">#e2fc888b</color>
+    <color name="course_grid_color7">#e2fcd068</color>
+    <color name="course_grid_color1">#e2ffa66e</color>
+    <color name="course_grid_color9">#e2ffef89</color>
+    <color name="course_grid_transparent">#00ffffff</color>
+
+
+    <!--grade color-->
+    <color name="grade_color0">#aad9d0</color>
+    <color name="grade_color1">#aec9e4</color>
+
+    <!--course menu-->
+    <color name="click_bg">#c7c7c7</color>
+    <color name="menu_bg">#B4B38B71</color>
+
+    <color name="menu_click_bg">#B3FBD769</color>
+
+    <color name="course_menu_line_color">#FFFFFF</color>
+    <color name="comurse_menu_textcolor">#FFFFFF</color>
+
+    <color name="main_title_text_select">#ffffffff</color>
+    <color name="main_title_text_normal">#78ffffff</color>
+
+
+    <color name="gray_de">#666666</color>
+    <color name="list_item_press">#216b74ff</color>
+
+
+    <color name="title_color">#ff699992</color>
+
+    <color name="course_day_widget_background">#55ffffff</color>
+    <color name="course_day_widget_background_all">#116495ED</color>
+
+    <color name="course_day_widget_text_all">#ff696969</color>
+
+    <color name="widget_down">#ff9c9e9e</color>
+    <color name="widget_up_black">#ff5a5e5e</color>
+
+    <color name="share_popup_bg">#8f000000</color>
+    <color name="line_bg">#CDCDCD</color>
+</resources>

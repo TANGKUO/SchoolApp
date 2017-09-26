@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/click_to_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/share_popup_bg"
+        >
+
+        <LinearLayout
+            android:id="@+id/popup_anima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            >
+            <TextView
+                android:id="@+id/tx_1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="分享到朋友圈"/>
+            <View
+                style="@style/line_style"/>
+            <TextView
+                android:id="@+id/tx_2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="分享给微信好友"/>
+            <View
+                style="@style/line_style"/>
+            <TextView
+                android:id="@+id/tx_4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="分享到空间"/>
+            <View
+                style="@style/line_style"/>
+            <TextView
+                android:id="@+id/tx_5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="分享给qq好友"/>
+            <View
+                style="@style/line_style"/>
+            <TextView
+                android:id="@+id/tx_3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="取消"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

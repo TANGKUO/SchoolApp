@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_color"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"></View>
+            <org.pointstone.cugapp.view.RoundImageView
+                android:id="@+id/head_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/users"/>
+
+        </LinearLayout>
+
+        <!--下拉方式选学期-->
+        <Spinner
+            android:id="@+id/termSpi"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:popupBackground="#fdfdfd" />
+        <ImageButton
+            android:id="@+id/more_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:background="@color/title_color"
+            android:src="@drawable/course_more" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/table_title"
+            layout="@layout/grade_list_item" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000" />
+
+
+    </LinearLayout>
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#00000000">
+
+        <ScrollView
+            android:id="@+id/grade_sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ListView
+                    android:id="@+id/grade_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:cacheColorHint="#ffffff"
+                    android:divider="#cccccc"
+                    android:dividerHeight="1.2dip"
+                    android:fadingEdge="vertical"
+                    android:scrollbars="vertical"></ListView>
+                <View
+                    android:id="@+id/linev"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#cccccc" />
+            </LinearLayout>
+        </ScrollView>
+    </com.baoyz.widget.PullRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="5"
+            android:background="#000"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/lastTv"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="5"
+            android:background="#000"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+</LinearLayout>

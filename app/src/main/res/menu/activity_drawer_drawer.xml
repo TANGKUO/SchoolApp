@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/grouup">
+
+        <item
+            android:id="@+id/schedule_nav"
+            android:icon="@drawable/ic_menu_course"
+            android:title="课程表" />
+        <item
+            android:id="@+id/grade_nav"
+            android:icon="@drawable/ic_menu_grade"
+            android:title="成绩" />
+        <item
+            android:id="@+id/charge_nav"
+            android:icon="@drawable/ic_menu_recharge"
+            android:title="充值" />
+        <item
+            android:id="@+id/exam_nav"
+            android:icon="@drawable/ic_menu_exam"
+            android:title="考试安排" />
+        <item
+            android:id="@+id/library_nav"
+            android:icon="@drawable/ic_menu_library"
+            android:title="图书馆" />
+        <item
+            android:id="@+id/finance_nav"
+            android:icon="@drawable/ic_menu_finance3"
+            android:title="财务明细" />
+       <!-- <item
+            android:id="@+id/gradetest"
+            android:icon="@drawable/ic_menu_grade"
+            android:title="成绩测试"/>
+        -->
+    </group>
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/setting_nav"
+            android:icon="@drawable/ic_menu_setting"
+            android:title="设置" />
+        <item
+            android:id="@+id/about_nav"
+            android:icon="@drawable/ic_menu_about"
+            android:title="关于我们" />
+        <item
+            android:id="@+id/send_nav"
+            android:icon="@drawable/ic_menu_suggestion"
+            android:title="建议反馈" />
+
+        <!--<item-->
+            <!--android:id="@+id/root_nav"-->
+            <!--android:icon="@drawable/ic_menu_cat"-->
+            <!--android:title="无账户(慎点" />-->
+        <!--<item-->
+            <!--android:id="@+id/unionid_nav"-->
+            <!--android:icon="@drawable/ic_menu_cat"-->
+            <!--android:title="获取unionid" />-->
+    </group>
+</menu>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#f9df96"
+    android:id="@+id/recharge_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/recharge_close"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:onClick="backActivity"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/imgclose_recharge"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="23dp"
+            android:textColor="#000000"
+            android:text="一卡通充值"
+            android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <Button
+            android:text="10元"
+            android:id="@+id/btn_money10"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#ff80c7a6"
+            android:layout_height="match_parent" />
+        <Button
+            android:textSize="20dp"
+            android:id="@+id/btn_money30"
+            android:textColor="#ffffff"
+            android:text="30元"
+            android:layout_marginLeft="20dp"
+            android:background="#ff80c7a6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:textSize="20dp"
+            android:id="@+id/btn_money50"
+            android:textColor="#ffffff"
+            android:text="50元"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ff80c7a6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:textSize="20dp"
+            android:id="@+id/btn_money100"
+            android:textColor="#ffffff"
+            android:text="100元"
+            android:layout_marginLeft="20dp"
+            android:background="#ff80c7a6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:textSize="20dp"
+            android:id="@+id/btn_money150"
+            android:textColor="#ffffff"
+            android:text="150元"
+            android:layout_marginLeft="20dp"
+            android:background="#ff80c7a6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="200元"
+            android:id="@+id/btn_money200"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="#ff80c7a6"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_money"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:background="#fffaf1de"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:hint="自定义金额" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#fffaf1de"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:password="true"
+        android:maxLength = "6"
+        android:layout_marginRight="20dp"
+        android:textColor="#434343"
+        android:textColorHint="#000000"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:hint="请输入密码" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:id="@+id/remember"
+        android:textSize="15dp"
+        android:text="记住密码"
+        android:textColor="#000000"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="25dp"
+        android:orientation="horizontal">
+        <Button
+
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_cancel"
+            style="@android:style/Theme.Dialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffec6c45"
+            android:text="取消"
+            android:layout_marginRight="50dp"
+            android:textSize="20dp"
+            android:textColor="#fafbfc" />
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/splash_dialog_left"
+            android:layout_weight="1"
+            android:background="#ffa6b528"
+            android:text="确认"
+
+            android:textSize="20dp"
+            android:textColor="#fafbfc" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/other_fab_circle"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:transitionName="transition_reveal"
+            android:background="#f9df96"
+            tools:targetApi="21"/>
+    </RelativeLayout>
+
+</LinearLayout>

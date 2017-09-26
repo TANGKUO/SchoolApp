@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--显示时间-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_color"
+        android:id="@+id/screen_time_ly">
+            <org.pointstone.cugapp.view.RoundImageView
+                android:id="@+id/head_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/users"
+                android:layout_marginLeft="5dp"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第12周"
+                android:id="@+id/weektime_tv"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageButton
+                android:id="@+id/more_btn"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@color/title_color"
+                android:scaleType="centerInside"
+                android:src="@drawable/course_more"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        >
+
+        <TextView
+            android:id="@+id/before_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n  ＜前一天\n"
+            android:textSize="15sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/daytime_tv"
+            android:text="12月30日星期五"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/next_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n后一天＞  \n"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/blue"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/course_day_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:dividerHeight="10dp" >
+    </ListView>
+
+</LinearLayout>

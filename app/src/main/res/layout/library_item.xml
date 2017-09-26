@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.pointstone.cugapp.view.SwipeItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/lend_again"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="续借"
+            android:textSize="16sp"
+            android:textColor="#ff6f6c6f"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/library_card_item"/>
+
+</org.pointstone.cugapp.view.SwipeItemLayout>

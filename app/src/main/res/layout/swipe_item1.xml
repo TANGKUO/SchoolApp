@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.pointstone.cugapp.view.SwipeItemLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+
+        <TextView
+            android:id="@+id/negative"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#FF6A6A"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/positive"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#9ACD32"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <include layout="@layout/grade_card_item"/>
+</org.pointstone.cugapp.view.SwipeItemLayout>

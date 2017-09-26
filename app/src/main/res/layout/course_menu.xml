@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/popup_contianer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!--<TextView-->
+            <!--android:id="@+id/course_more_pic"-->
+            <!--android:layout_width="180dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:background="@drawable/course_menu_press"-->
+            <!--android:gravity="center"-->
+            <!--android:text="截图分享"-->
+            <!--android:textColor="@color/comurse_menu_textcolor"-->
+            <!--android:textSize="14sp"/>-->
+
+        <!--<View-->
+            <!--android:layout_width="180dp"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="@color/course_menu_line_color"/>-->
+
+        <TextView
+            android:id="@+id/course_more_day"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/course_menu_press"
+            android:gravity="center"
+            android:text="天视图"
+            android:textColor="@color/comurse_menu_textcolor"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="0.5dp"
+            android:background="@color/course_menu_line_color"/>
+
+        <TextView
+            android:id="@+id/course_background"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@drawable/course_menu_press"
+            android:gravity="center"
+            android:text="更换背景"
+            android:textColor="@color/comurse_menu_textcolor"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

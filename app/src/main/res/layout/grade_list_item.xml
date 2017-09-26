@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000">
+
+        <TextView
+            android:id="@+id/kcmcTv"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:text="课程名称" />
+
+        <TextView
+            android:id="@+id/kcxzTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="课程性质" />
+
+        <TextView
+            android:id="@+id/xfTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dip"
+            android:textColor="#000000"
+            android:paddingTop="10dip"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="学分" />
+
+        <TextView
+            android:id="@+id/jdTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="绩点" />
+
+        <TextView
+            android:id="@+id/cjTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dip"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:paddingTop="10dip"
+            android:gravity="center"
+            android:text="成绩" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

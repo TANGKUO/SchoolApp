@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000" >
+    <View
+        android:layout_width="wrap_content"
+        android:id="@+id/black_view1"
+        android:layout_height="0dp"
+        android:layout_weight="1"></View>
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewPager"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_gravity="bottom"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:paddingBottom="30dp"
+    android:paddingEnd="@dimen/card_padding"
+    android:paddingLeft="@dimen/card_padding"
+    android:paddingRight="@dimen/card_padding"
+    android:paddingStart="@dimen/card_padding"
+    android:layout_weight="2.5"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/black_view2"
+        android:layout_weight="1"></View>
+</LinearLayout>

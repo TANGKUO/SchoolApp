@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请进行下边的步骤\n1.微信关注中国地质大学企业号\n2.进入企业号点击统一身份认证，点击账号使用，点击应用授权\n3.完成以后退出登录再点击登录"/>
+</LinearLayout>

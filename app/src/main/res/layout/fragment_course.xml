@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?><!--模仿课程表的界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/course_background"
+
+     >
+
+    <!--显示时间-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_color"
+        android:orientation="horizontal"
+        android:id="@+id/screen_time_ly">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"></View>
+            <org.pointstone.cugapp.view.RoundImageView
+                android:id="@+id/head_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/users"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="48">
+            <Spinner
+                android:id="@+id/termSpi"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="right"
+                android:popupBackground="#fdfdfd"
+                android:dropDownVerticalOffset="-50dp"
+                android:dropDownHorizontalOffset="20dp"
+                />
+
+            <!--下拉方式选周数-->
+            <Spinner
+                android:id="@+id/switchWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="right"
+                android:popupBackground="#fdfdfd"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/more_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@color/title_color"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/course_more" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!--显示星期-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/course_time_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/screen_week_ly">
+
+        <TextView
+            android:id="@+id/month_tv"
+            android:layout_width="@dimen/gride_weigth_num"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="11月"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/mon_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="周一"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tue_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="周二"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/wed_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="周三"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/ths_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="周四"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/fri_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="周五"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/sat_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="周六"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/sun_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="周日"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+
+        >
+        <!--android:background="#F4FFF5EE"-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/course_sv"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--显示多少节课-->
+                <LinearLayout
+                    android:layout_width="@dimen/gride_weigth_num"
+                    android:layout_height="match_parent"
+                    android:background="@color/course_time_color"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/class1_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class2_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/class3_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class4_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class5_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class6_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class7_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class8_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class9_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class10_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="10"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class11_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="11"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/class12_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/gride_height_num"
+                        android:gravity="center"
+                        android:text="12"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+
+                <!--#E5E5E5-->
+                <GridView
+                    android:id="@+id/courceDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:numColumns="7"
+                    android:stretchMode="columnWidth">
+                </GridView>
+                <!--android:background="#F4FFF5EE"-->
+            </LinearLayout>
+        </ScrollView>
+
+    </com.baoyz.widget.PullRefreshLayout>
+        <!--显示课表详细信息-->
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+</LinearLayout>

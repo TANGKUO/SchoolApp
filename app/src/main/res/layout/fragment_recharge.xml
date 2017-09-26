@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffD4E5C2"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_title"
+        android:background="@color/title_color"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <org.pointstone.cugapp.view.RoundImageView
+            android:id="@+id/recharge_head_iv"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/users"/>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="一卡通助手"
+            android:layout_marginRight="55dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/fragment_title"
+        android:layout_width="match_parent"
+        android:id="@id/top"
+        android:layout_height="220dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txt_query"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="卡里的钱我也不知道"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/txt_what"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="没网了怎么办！"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_chui"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/chui03"
+                android:layout_height="180dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:background="#ffefcd55"
+        android:text="充值"
+        android:textSize="17dp"
+        android:clickable="true"
+        android:transitionName="transition_reveal"
+        tools:targetApi="lollipop"
+        android:contentDescription="@null"
+        android:id="@+id/button_recharge"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="30dp"
+        android:layout_width="120dp"
+        android:layout_height="210dp" />
+    <LinearLayout
+        android:layout_marginLeft="135dp"
+        android:id="@+id/first"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:clickable="true"
+            android:transitionName="transition_reveal"
+            tools:targetApi="lollipop"
+            android:contentDescription="@null"
+            android:textSize="17dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/button_accountBook"
+            android:background="#ffa66e"
+            android:text="今日流水"
+            android:layout_marginRight="5dp"
+
+            android:layout_height="100dp" />
+        <Button
+            android:textSize="17dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#ff709cde"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="1dp"
+            android:text="挂失"
+            android:id="@+id/button_lose"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="135dp"
+        android:id="@+id/second"
+        android:layout_below="@+id/first"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:textSize="17dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/button_help"
+            android:background="#84d0ac"
+            android:text="用户须知"
+            android:layout_marginRight="5dp"
+            android:layout_height="100dp" />
+        <Button
+            android:textSize="17dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#fc888b"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="1dp"
+            android:text="个人设置"
+            android:id="@+id/button_person"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+</RelativeLayout>

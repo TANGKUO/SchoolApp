@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "org.pointstone.cugapp"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 16
+        versionName "1.0.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    signingConfigs {
+        release {
+            storeFile file('org.pointstone.cugapp.keystore')
+            storePassword 'abcd123456'
+            keyAlias 'cugapp'
+            keyPassword 'abcd123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/libammsdk.jar')
+    //微信
+
+    //json请求
+
+    // LeanCloud 基础包
+
+    //欢迎页
+
+    //下拉刷新
+
+    // popWindow
+
+    //   compile 'com.umeng.analytics:analytics:latest.integration' //友盟
+
+    //阿里百川用户反馈
+    compile(name: 'alisdk-feedback-2.5.0.1', ext: 'aar')
+    compile(name: 'securityguardaar3-5.1.81', ext: 'aar')
+    //关于页面
+
+    //webView
+    compile files('libs/TalkingData_AppAnalytics_Android_SDK_V2.3.50.jar')
+    //动态获取权限
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'cn.leancloud.android:avoscloud-sdk:v3.+'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.baoyz.pullrefreshlayout:library:1.2.0'
+    compile 'com.github.razerdp:BasePopup:v1.5.1'
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    compile 'com.github.medyo:android-about-page:1.1.1'
+    compile 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+    compile 'com.yanzhenjie:permission:1.0.4'
+    compile 'com.android.support:support-v4:24.2.1'
+    testCompile 'junit:junit:4.12'
+    //RecyclerView 和 CardView都是在Android 5.0中引入的，所以要想在低版本中使用，需要在build.gradle中添加
+    releaseCompile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile files('libs/yunba-sdk-release1.8.5.jar')
+    compile 'cn.finalteam.rxgalleryfinal:library:0.0.3'
+    //裁剪图片
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile files('libs/HwPush_SDK_V2705.jar')
+    compile files('libs/MiPush_SDK_Client_3_2_2.jar')
+    compile 'cn.bingoogolapple:bga-banner:2.1.7@aar'
+    //引导页
+    compile 'com.meiqia:meiqiasdk:3.3.0@aar'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5781.jar')
+}

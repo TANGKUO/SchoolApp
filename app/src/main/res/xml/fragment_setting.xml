@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<PreferenceCategory-->
+        <!--android:layout="@layout/setting_category_widget"-->
+        <!--android:title="隐私设置">-->
+        <!--<CheckBoxPreference-->
+            <!--android:key="recharge_switch"-->
+            <!--android:layout="@layout/setting_item"-->
+            <!--android:title="测试"-->
+            <!--android:defaultValue="false"-->
+            <!--android:widgetLayout="@layout/setting_switch" />-->
+        <!--<CheckBoxPreference-->
+            <!--android:key="grade_switch"-->
+            <!--android:layout="@layout/setting_item"-->
+            <!--android:title="测试"-->
+            <!--android:defaultValue="false"-->
+            <!--android:widgetLayout="@layout/setting_switch" />-->
+    <!--</PreferenceCategory>-->
+    <PreferenceCategory
+        android:layout="@layout/setting_category_widget"
+        android:title="推送设置">
+        <CheckBoxPreference
+        android:key="status"
+        android:layout="@layout/setting_item"
+        android:title="状态栏通知"
+        android:defaultValue="true"
+        android:widgetLayout="@layout/setting_switch" />
+        <CheckBoxPreference
+            android:key="new"
+            android:layout="@layout/setting_item"
+            android:title="自动检查更新"
+            android:defaultValue="true"
+            android:widgetLayout="@layout/setting_switch" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/setting_category_widget"
+        android:title="其他设置">
+        <Preference
+            android:layout="@layout/setting_item"
+            android:key="@string/quit"
+            android:title="注销登录" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

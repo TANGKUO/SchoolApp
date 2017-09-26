@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name"> 我的地质锤</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="entry">立即体验</string>
+    <string name="refresh">刷新</string>
+
+    <string name="recharge_switch">recharge_switch</string>
+    <string name="grade_switch">grade_switch</string>
+    <string name="quit">quit</string>
+
+    <string name="recharge_need_know">
+        提示：从你的和一卡通绑定的银行卡给一卡通充值\n\n提示：如提示充值成功后请去查询余额信息以确认\n\n提示：一卡通充值成功最终以银行卡扣款成功为准\n\n提示：消费密码默认为身份证号不包括 X 的后六位\n\n提示：可能会有其他异常，请截图并告诉开发人员\n\n提示：所有曾经掉过银行卡的同学都无法在线充值成功！因为你的新卡号没有和一卡通绑定！请去一卡通管理中心解决绑定！一般出现「未知错误 59」就是这个问题！\n\n提示：提示充值成功后，钱以「过渡余额」形式存在你的一卡通帐户中，需要去任意一处联网的刷卡机（如食堂，超市）刷一次卡进行领取（无需消费，贴卡然后听到「嘀」的一声就完成了余额同步）
+ </string>
+    <string name="title_activity_exam_alter">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="people_html">https://about.cugapp.com/AppAboutPage/Android/AboutUs/</string>
+    <string name="function_html">https://about.cugapp.com/AppAboutPage/Android/AboutUs/</string>
+    <!--<string name="people_html">http://lab.yuugao.cn/people/</string>-->
+    <string name="pointstone_html">https://www.pointstone.org</string>
+    <string name="hint_html">https://about.cugapp.com/AppAboutPage/Android/ApplicationLicense/</string>
+</resources>

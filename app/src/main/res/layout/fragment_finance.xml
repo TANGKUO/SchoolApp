@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/fragment_title"
+        android:background="@color/title_color"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <org.pointstone.cugapp.view.RoundImageView
+            android:id="@+id/library_head_iv"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/users"/>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="财务明细"
+            android:layout_marginRight="55dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/fragment_title"
+        android:id="@+id/fen"
+        android:background="#b7b7b7"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_below="@id/fen"
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/view_empty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="奖助查询"
+                android:gravity="center_horizontal"
+                android:textColor="@drawable/main_title_txt_sel"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="5dp"
+                android:text="学费查询"
+                android:gravity="center_horizontal"
+                android:textColor="@drawable/main_title_txt_sel"
+                android:textSize="20sp" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_shape_circle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:scaleType="matrix"
+            android:src="@drawable/shape_circle" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/finance_viewpager_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title" />
+
+</RelativeLayout>

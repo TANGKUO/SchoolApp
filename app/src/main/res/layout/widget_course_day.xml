@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/course_day_widget_background_all"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/course_day_widget_background"
+        >
+
+        <TextView
+            android:id="@+id/before_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n  ＜前一天\n"
+            android:textSize="10sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/blue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/daytime_tv"
+            android:text="12月30日星期五"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/course_day_widget_text_all"
+            />
+
+        <TextView
+            android:id="@+id/next_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n后一天＞  \n"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/blue"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listViewWidget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:dividerHeight="10dp" >
+    </ListView>
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="加载中..."
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:visibility="gone" />
+</LinearLayout>
